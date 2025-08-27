@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8d9d6;
+  font-family: 'Helvetica Neue', Arial;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  background: #d8d9d6;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #111;
+  cursor: default;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+nav ul li {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+}
+
+nav ul li.agende-agora {
+  color: #fff;
+  background-color: #000;
+  font-weight: 700;
+  padding: 6px 14px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+  padding-top: 0px;
+}
+
+.hero {
+  display: flex;
+  min-height: 100vh;
+  background-color: #d9d8d6;
+  padding: 80px 60px;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #111;
+  line-height: 1.1;
+  white-space: pre-line;
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.btn-saiba-mais {
+  width: 140px;
+  padding: 14px 0;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #222;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-right img {
+  max-height: 85vh;
+  width: 600px;
+  height: 800px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Nossos Serviços */
+.nossos-servicos {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 40px 40px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.nossos-servicos h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 40px;
+  text-transform: lowercase;
+  color: #111;
+}
+
+/* Carrossel */
+.carrossel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.servicos-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.servicos-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: max-content;
+}
+
+.card-servico {
+  flex: 0 0 300px;
+  margin-right: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-servico img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.card-servico h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.card-servico p.preco {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-servico p.descricao {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Botões de navegação */
+.seta-navegacao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.seta-navegacao.esquerda {
+  left: 0;
+}
+
+.seta-navegacao.direita {
+  right: 0;
+}
+
+/* CONSULTA */
+.consulta {
+  background-image: url('bg-consulta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: rgb(253, 250, 250);
+}
+
+.consulta-content {
+  padding: 60px 30px;
+  max-width: 800px;
+}
+
+.consulta-content h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.consulta-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-agende {
+  padding: 18px 36px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-agende:hover {
+  background-color: #e5e5e5;
+}
+
+/* Rodapé */
+footer.rodape {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  background-color: white;
+  color: black;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.rodape-coluna {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 20px;
+}
+
+.rodape h2, .rodape h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.rodape p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.rodape a {
+  color: #000;
+  text-decoration: underline;
+}
